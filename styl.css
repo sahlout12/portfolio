@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #1f2933;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+  animation: fadeDown 1s ease;
+}
+
+header h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+/* SECTIONS */
+section {
+  background: white;
+  margin: 30px auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  animation: fadeUp 1s ease;
+}
+
+h2 {
+  color: #2563eb;
+  margin-bottom: 15px;
+  border-left: 4px solid #38bdf8;
+  padding-left: 10px;
+}
+
+/* ABOUT */
+.about p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* SKILLS */
+.skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.skills li {
+  background: #eff6ff;
+  padding: 12px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(37, 99, 235, 0.25);
+}
+
+/* PROJECTS */
+.project {
+  background: #f1f5f9;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.project h3 {
+  color: #1d4ed8;
+  margin-bottom: 5px;
+}
+
+/* CONTACT */
+.contact p {
+  margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: white;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e0f2fe;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .skills ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: white;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e0f2fe;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .skills ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills ul {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: white;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e0f2fe;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .skills ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills ul {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+.my {
+ align-items: center; 
+ grid-template-columns: 1fr;
+}
+@media(max-width:480px){
+  .my h2{
+      color: #2563eb;
+
+  }
+}
+.my :hover{
+    background: #e0f2fe;
+  transform: scale(1.05);
+}
